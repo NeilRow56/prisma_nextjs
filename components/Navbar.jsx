@@ -6,7 +6,7 @@ import DropdownMenu from "@/components/DropdownMenu";
 function Navbar() {
   let Links = [
     { name: "Home", link: "/" },
-    { name: "Todo-List", link: "/todo-list" },
+    { name: "User-List", link: "/user-list" },
     { name: "Register", link: "/users/register" },
     { name: "Login", link: "/" },
   ];
