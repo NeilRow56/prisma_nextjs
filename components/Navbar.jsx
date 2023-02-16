@@ -7,7 +7,7 @@ function Navbar() {
   let Links = [
     { name: "Home", link: "/" },
     { name: "User-List", link: "/user-list" },
-    { name: "Register", link: "/users/register" },
+    { name: "Register", link: "/register" },
     { name: "Login", link: "/" },
   ];
   const [navbar, setNavbar] = useState(false);
