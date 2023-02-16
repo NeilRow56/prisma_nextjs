@@ -1,26 +1,10 @@
 import UserCard from "@/components/UserCard";
-import prisma from "@/lib/prisma";
-
-export async function getUsers() {
-  try {
-    const data = await prisma.user.findMany({
-      select: {
-        id: true,
-        name: true,
-        email: true,
-      },
-    });
-
-    return data;
-  } catch (error) {
-    return { error };
-  }
-}
+import { getUsers } from "@/lib/prisma/users";
 
 export default async function usersPage() {
   const userList = await getUsers();
 
-  console.log(userList);
+  //   console.log(userList);
   return (
     <div className="space-y-4 p-4 text-slate-800">
       <h1 className="p-4 text-2xl font-bold">User List</h1>
