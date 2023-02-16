@@ -19,7 +19,7 @@ const UserCard = ({ userList }) => {
       </div>
       <div className="mt-4 text-right">
         <Link
-          href={`/todo-list/${user.id}`}
+          href={`/user-list/${user.id}`}
           type="submit"
           className="primary-button "
         >
