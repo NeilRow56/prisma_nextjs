@@ -11,7 +11,7 @@ export default async function DynamicUserPage({ params }) {
   const user = await getUser(id);
 
   return (
-    <div className="p-4 text-slate-100 md:w-[50vw] lg:w-[30vw]">
+    <div className=" p-4 text-slate-100 md:w-[50vw] lg:w-[30vw]">
       <div key={user.id} className="bg-teal-800 p-4">
         <div className="space-y-2">
           <h1 className="text-2xl">{user.name}</h1>
